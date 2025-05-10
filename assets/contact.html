@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Liên hệ trung tâm MOS i-NEW IT để được tư vấn các khóa học tin học văn phòng chuẩn quốc tế." />
+  <title>Liên hệ - MOS i-NEW IT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-blue: #1E88E5;
+      --primary-green: #43A047;
+    }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f9f9f9; }
+    .title-bar {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-green));
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 40px 0;
+    }
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .zalo-call {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .zalo-call img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s;
+    }
+    .zalo-call img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MOS i-NEW IT</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Khóa học</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <section class="title-bar">
+    <h1>Liên hệ với chúng tôi</h1>
+    <p>Hãy để lại thông tin – Chúng tôi sẽ phản hồi nhanh nhất!</p>
+  </section>
+
+  <!-- Contact Form & Map -->
+  <section class="container py-5">
+    <div class="row g-5">
+      <!-- Form -->
+      <div class="col-md-6">
+        <h3>Gửi tin nhắn</h3>
+        <form action="mailto:contact@inewit.edu.vn" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label for="name" class="form-label">Họ và tên</label>
+            <input type="text" class="form-control" name="Họ tên" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email của bạn</label>
+            <input type="email" class="form-control" name="Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Nội dung</label>
+            <textarea class="form-control" name="Nội dung" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Gửi liên hệ</button>
+        </form>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-6">
+        <h3>Địa chỉ trung tâm</h3>
+        <p>123 Đường Tin Học, Quận Kỹ Năng, TP. Học Tập</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.473152395217!2d106.700424!3d10.775658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f262ddf73fd%3A0x4c3c6f78ae0dc2f0!2zQ8O0bmcgdHkgVE5ISCBLaeG7gXUgVGjhuqduIFTDtG5n!5e0!3m2!1svi!2s!4v1681999999999"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zalo Call -->
+  <div class="zalo-call">
+    <a href="https://zalo.me/0123456789" target="_blank" title="Chat qua Zalo">
+      <img src="https://stc-zaloprofile.zadn.vn/zlp-default-avatar.png" alt="Zalo Chat" />
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>MOS i-NEW IT</h5>
+          <p>Hãy kết nối với chúng tôi để nhận tư vấn miễn phí và hỗ trợ học tập tốt nhất!</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Liên kết</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="courses.html">Khóa học</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Thông tin</h5>
+          <p>Email: contact@inewit.edu.vn</p>
+          <p>Zalo: 0123 456 789</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

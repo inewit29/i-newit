@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MOS i-NEW IT - Trung tâm đào tạo Word, Excel, PowerPoint từ cơ bản đến nâng cao chuẩn MOS." />
+  <meta name="keywords" content="MOS, Word, Excel, PowerPoint, tin học văn phòng, đào tạo MOS, học tin học, văn phòng chuẩn MOS" />
+  <meta name="author" content="i-NEW IT" />
+  <title>MOS i-NEW IT - Khóa học tin học văn phòng chuẩn quốc tế</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-blue: #1E88E5;
+      --primary-green: #43A047;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: var(--primary-blue);
+    }
+
+    .navbar-nav .nav-link {
+      color: #333;
+      margin-right: 1rem;
+    }
+
+    .carousel-item {
+      height: 75vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .carousel-caption h1 {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      display: inline-block;
+      border-radius: 8px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 250px;
+      perspective: 1000px;
+      margin-bottom: 2rem;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .flip-card-front {
+      background-color: var(--primary-blue);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .flip-card-back {
+      background-color: var(--primary-green);
+      color: white;
+      transform: rotateY(180deg);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+
+  <!-- Navbar -->
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="assets/images/logo i-new.png" alt="MOS Logo" height="40" class="me-2" />
+        <span class="fw-bold text-primary">MOS i-NEW IT</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Khóa học</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Carousel -->
+  <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('assets/images/cover1.png');">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Học Word từ A-Z chuẩn MOS</h1>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('assets/images/cover2.png');">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Thành thạo Excel nâng cao</h1>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('assets/images/cover3.png');">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>PowerPoint chuyên nghiệp ấn tượng</h1>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Courses Section -->
+  <section class="container py-5" id="courses">
+    <h2 class="text-center mb-5">Khoá học nổi bật</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Word cơ bản đến nâng cao</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Nắm vững công cụ Word, định dạng văn bản, tạo mục lục tự động, v.v.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Excel thực chiến</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Sử dụng hàm, Pivot Table, biểu đồ, và quản lý dữ liệu như chuyên gia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>PowerPoint sáng tạo</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Thiết kế slide chuyên nghiệp, hiệu ứng mượt mà, trình bày ấn tượng.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Form -->
+      <div class="col-md-6">
+        <h3>Liên hệ với chúng tôi</h3>
+        <form action="mailto:inewedu@15th55.onmicrosoft.com" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label class="form-label">Họ và tên</label>
+            <input type="text" class="form-control" name="Họ tên" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email của bạn</label>
+            <input type="email" class="form-control" name="Email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nội dung</label>
+            <textarea class="form-control" name="Nội dung" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Gửi liên hệ</button>
+        </form>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="col-md-6">
+        <h3>Địa chỉ</h3>
+        <p>98/1, Lê Văn Lương, Tân Hưng, Q.7, TPHCM</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.473152395217!2d106.700424!3d10.775658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f262ddf73fd%3A0x4c3c6f78ae0dc2f0!2zQ8O0bmcgdHkgVE5ISCBLaeG7gXUgVGjhuqduIFTDtG5n!5e0!3m2!1svi!2s!4v1681999999999"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Zalo Button -->
+<div class="zalo-call">
+  <a href="https://zalo.me/0123456789" target="_blank" title="Chat qua Zalo">
+    <img src="https://stc-zaloprofile.zadn.vn/zlp-default-avatar.png" alt="Zalo Chat" />
+  </a>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4">
+          <h5>MOS i-NEW IT</h5>
+          <p>Trung tâm đào tạo tin học văn phòng chuẩn quốc tế với các khóa học MOS chuyên sâu.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Liên kết</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Khóa học</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Liên hệ</h5>
+          <p>Email: inewedu@15th55.onmicrosoft.com</p>
+          <p>Hotline: 0123 456 789</p>
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+</body>
+</html>
